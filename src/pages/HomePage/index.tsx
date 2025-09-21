@@ -1,3 +1,5 @@
+import ThemePreviewPage from "./ThemePreviewPage";
+
 export default function HomePage() {
-  return <div>HomePage</div>;
+  return <ThemePreviewPage />;
 }

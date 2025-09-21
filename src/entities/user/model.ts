@@ -18,6 +18,6 @@ export interface User {
 //   created_at: string;
 //   expired_at: string;
 //   is_active: string;
-//   _created_at_: string;
+//   _created_at: string;
 //   _updated_at: string;
 // }
