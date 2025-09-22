@@ -1,18 +1,10 @@
+import Footer from "@/widgets/Footer";
+import Header from "@/widgets/Header";
+
 export default function ThemePreviewPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header */}
-      <header className="bg-white dark:bg-gray-800 shadow-soft border-b border-gray-200 dark:border-gray-700">
-        <div className="container mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-            🎨 Tailwind Theme Demo
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300 mt-2">
-            Демонстрация настроенной цветовой палитры и компонентов
-          </p>
-        </div>
-      </header>
-
+      <Header />
       <main className="container mx-auto px-4 py-8">
         {/* Color Palette Section */}
         <section className="mb-12">
@@ -327,15 +319,7 @@ export default function ThemePreviewPage() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-12">
-        <div className="container mx-auto px-4 py-6">
-          <p className="text-center text-gray-600 dark:text-gray-300">
-            🎨 Tailwind CSS Theme Demo - Все компоненты готовы к использованию!
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

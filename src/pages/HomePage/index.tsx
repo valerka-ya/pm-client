@@ -1,5 +1,5 @@
-import ThemePreviewPage from "./ThemePreviewPage";
+import { MainLayout } from "@/widgets/Layouts";
 
 export default function HomePage() {
-  return <ThemePreviewPage />;
+  return <MainLayout>Hello</MainLayout>;
 }
