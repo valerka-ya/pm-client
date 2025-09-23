@@ -4,7 +4,6 @@ import Header from "@/widgets/Header";
 export default function ThemePreviewPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <Header />
       <main className="container mx-auto px-4 py-8">
         {/* Color Palette Section */}
         <section className="mb-12">
@@ -319,7 +318,6 @@ export default function ThemePreviewPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

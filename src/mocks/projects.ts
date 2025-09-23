@@ -113,3 +113,7 @@ export const mockProjects: Project[] = [
     _updated_at: "2025-09-16T11:20:00Z",
   },
 ];
+
+export function getProjectById(project_id: string) {
+  return mockProjects.find((el) => el.project_id === project_id);
+}
