@@ -1,4 +1,29 @@
+// data for frontend
 export interface Habit {
+  habit_id: string;
+  title: string;
+  description: string;
+  project_id: string;
+  is_archived: boolean;
+  frequency_unit: "day" | "week" | "month";
+  frequency_count: number;
+  tags: HabitTagDictionary[] | null;
+  _created_at: string;
+  _updated_at: string;
+}
+
+export interface HabitLogs {
+  id: string;
+  habit_id: HabitBackend["habit_id"];
+  comment: string;
+  is_completed: boolean;
+  log_date: string;
+  _created_at: string;
+  _updated_at: string;
+}
+
+// backend interfaces
+export interface HabitBackend {
   habit_id: string;
   title: string;
   description: string;
@@ -10,26 +35,16 @@ export interface Habit {
   _updated_at: string;
 }
 
-export interface HabitLogs {
-  id: string;
-  habit_id: Habit["habit_id"];
-  comment: string;
-  is_completed: boolean;
-  log_date: string;
-  _created_at: string;
-  _updated_at: string;
-}
-
 export interface HabitTagDictionary {
   tag_id: string;
   title: string;
-  _created_at: string;
-  _updated_at: string;
+  _created_at?: string;
+  _updated_at?: string;
 }
 
 export interface HabitTags {
   tag_id: HabitTagDictionary["tag_id"];
-  habit_id: Habit["habit_id"];
+  habit_id: HabitBackend["habit_id"];
   _created_at: string;
   _updated_at: string;
 }
