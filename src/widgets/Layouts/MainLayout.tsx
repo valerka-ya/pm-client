@@ -11,11 +11,13 @@ const MainLayout: React.FC<LayoutProps> = ({
   children,
   headerProps,
 }: LayoutProps) => (
-  <>
+  <div className="min-h-screen flex flex-col">
     <Header {...headerProps} />
-    <main className="mx-auto px-4">{children}</main>
+    <main className="container mx-auto px-8 w-full flex-1 overflow-y-auto">
+      {children}
+    </main>
     <Footer />
-  </>
+  </div>
 );
 
 export default MainLayout;

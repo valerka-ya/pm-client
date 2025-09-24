@@ -23,5 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Documentation files in project root
+# Documentation files
 *.md
+!README.md
+!CHANGELOG.md
