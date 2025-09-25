@@ -5,7 +5,7 @@ export const mockUser: User = {
   first_name: "Valeria",
   last_name: "Developer",
   email: "valeria@example.com",
-  password_hash: "$2b$10$abcdefghijk1234567890", // фейковый bcrypt-хеш
+  password_hash: "$2b$10$abcdefghijk1234567890", // fake bcrypt hash
   _created_at: "2025-07-01T08:00:00Z",
   _updated_at: "2025-09-15T12:00:00Z",
 };

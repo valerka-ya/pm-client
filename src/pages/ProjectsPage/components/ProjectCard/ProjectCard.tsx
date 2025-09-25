@@ -30,13 +30,15 @@ export default function ProjectCard(props: { projectData: Project }) {
 
       <div className="flex items-center justify-between">
         <span className="text-sm text-gray-500 dark:text-gray-400">
-          Дедлайн: {new Date(projectData.deadline).toLocaleDateString()}
+          Deadline: {new Date(projectData.deadline).toLocaleDateString("en-US")}{" "}
+          <br />
+          Progress: {projectData.progress}%
         </span>
         <Link
           to={`/projects/${projectData.project_id}`}
           className="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
         >
-          Подробнее
+          Details
         </Link>
       </div>
     </div>

@@ -7,6 +7,7 @@ export interface Project {
   end_date: string;
   completed_date: string;
   is_completed: boolean;
+  progress: number;
   _created_at: string;
   _updated_at: string;
 }

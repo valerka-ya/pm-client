@@ -4,8 +4,8 @@ export const mockTasks: Task[] = [
   // --- proj_001: Redesign Landing Page ---
   {
     task_id: "task_001",
-    title: "Сделать прототип в Figma",
-    description: "Создать интерактивный прототип для новой лендинг-страницы.",
+    title: "Create Figma prototype",
+    description: "Build an interactive prototype for the new landing page.",
     project_id: "proj_001",
     deadline: "2025-09-20T23:59:59Z",
     start_date: "2025-09-01T09:30:00Z",
@@ -22,8 +22,8 @@ export const mockTasks: Task[] = [
   },
   {
     task_id: "task_002",
-    title: "Верстка главного экрана",
-    description: "Сверстать адаптивный UI для desktop и mobile.",
+    title: "Implement main screen UI",
+    description: "Build responsive UI for desktop and mobile.",
     project_id: "proj_001",
     deadline: "2025-10-10T23:59:59Z",
     start_date: "2025-09-12T10:00:00Z",
@@ -42,8 +42,8 @@ export const mockTasks: Task[] = [
   // --- proj_002: Mobile App MVP ---
   {
     task_id: "task_003",
-    title: "API авторизации",
-    description: "Сделать базовый эндпоинт логина/регистрации.",
+    title: "Auth API",
+    description: "Create basic login/registration endpoint.",
     project_id: "proj_002",
     deadline: "2025-10-05T23:59:59Z",
     start_date: "2025-09-12T09:00:00Z",
@@ -60,8 +60,8 @@ export const mockTasks: Task[] = [
   },
   {
     task_id: "task_004",
-    title: "UI для регистрации",
-    description: "Сверстать экран регистрации с валидацией.",
+    title: "Sign-up UI",
+    description: "Implement sign-up screen with validation.",
     project_id: "proj_002",
     deadline: "2025-10-15T23:59:59Z",
     start_date: "2025-09-15T09:00:00Z",
@@ -80,8 +80,8 @@ export const mockTasks: Task[] = [
   // --- proj_003: Internal Dashboard (completed project) ---
   {
     task_id: "task_005",
-    title: "Настроить роли пользователей",
-    description: "Реализовать админ/менеджер/юзер роли.",
+    title: "Configure user roles",
+    description: "Implement admin/manager/user roles.",
     project_id: "proj_003",
     deadline: "2025-09-10T23:59:59Z",
     start_date: "2025-08-25T09:30:00Z",
@@ -98,8 +98,8 @@ export const mockTasks: Task[] = [
   },
   {
     task_id: "task_006",
-    title: "UI таблицы пользователей",
-    description: "Отрисовать таблицу с сортировкой и поиском.",
+    title: "Users table UI",
+    description: "Render table with sorting and search.",
     project_id: "proj_003",
     deadline: "2025-09-12T23:59:59Z",
     start_date: "2025-09-01T09:00:00Z",
@@ -118,8 +118,8 @@ export const mockTasks: Task[] = [
   // --- proj_006: AI Chatbot Integration (1 task only) ---
   {
     task_id: "task_007",
-    title: "Интеграция с Telegram",
-    description: "Добавить возможность запускать чат-бота в Telegram.",
+    title: "Telegram integration",
+    description: "Enable running chatbot in Telegram.",
     project_id: "proj_006",
     deadline: "2025-09-25T23:59:59Z",
     start_date: "2025-09-12T10:00:00Z",
@@ -137,8 +137,8 @@ export const mockTasks: Task[] = [
   // --- proj_005: Customer Feedback Portal ---
   {
     task_id: "task_010",
-    title: "Собрать форму обратной связи",
-    description: "Сделать базовую форму с полями имя, email и комментарий.",
+    title: "Build feedback form",
+    description: "Basic form with name, email and comment.",
     project_id: "proj_005",
     deadline: "2025-09-08T23:59:59Z",
     start_date: "2025-08-25T09:00:00Z",
@@ -155,8 +155,8 @@ export const mockTasks: Task[] = [
   },
   {
     task_id: "task_010a",
-    title: "Капча для формы",
-    description: "Добавить reCAPTCHA v3 для защиты от ботов.",
+    title: "Form captcha",
+    description: "Add reCAPTCHA v3 to protect from bots.",
     project_id: "proj_005",
     deadline: "2025-09-05T23:59:59Z",
     start_date: "2025-08-28T09:00:00Z",
@@ -175,8 +175,8 @@ export const mockTasks: Task[] = [
   // --- proj_007: Recruitment Platform ---
   {
     task_id: "task_011",
-    title: "Система рекомендаций кандидатов",
-    description: "Алгоритм подбора кандидатов на основе резюме.",
+    title: "Candidate recommendation system",
+    description: "Algorithm to match candidates based on resumes.",
     project_id: "proj_007",
     deadline: "2025-11-01T23:59:59Z",
     start_date: "2025-09-15T09:00:00Z",
@@ -193,8 +193,8 @@ export const mockTasks: Task[] = [
   },
   {
     task_id: "task_011a",
-    title: "Парсинг резюме",
-    description: "Извлекать данные из pdf/docx файлов.",
+    title: "Resume parsing",
+    description: "Extract data from pdf/docx files.",
     project_id: "proj_007",
     deadline: "2025-10-10T23:59:59Z",
     start_date: "2025-09-20T09:00:00Z",
@@ -211,8 +211,8 @@ export const mockTasks: Task[] = [
   },
   {
     task_id: "task_011b",
-    title: "Скоринг кандидатов",
-    description: "Реализовать базовую модель оценки по ключевым навыкам.",
+    title: "Candidate scoring",
+    description: "Implement basic scoring model on key skills.",
     project_id: "proj_007",
     deadline: "2025-10-25T23:59:59Z",
     start_date: "2025-09-25T09:00:00Z",
@@ -231,8 +231,8 @@ export const mockTasks: Task[] = [
   // --- proj_009: Team Collaboration Tool ---
   {
     task_id: "task_012",
-    title: "Реалтайм чат",
-    description: "Добавить возможность обмена сообщениями внутри проекта.",
+    title: "Realtime chat",
+    description: "Add messaging within a project.",
     project_id: "proj_009",
     deadline: "2025-12-01T23:59:59Z",
     start_date: "2025-09-20T09:00:00Z",
@@ -249,8 +249,8 @@ export const mockTasks: Task[] = [
   },
   {
     task_id: "task_012a",
-    title: "Сохранение истории чата",
-    description: "Добавить хранение сообщений в базе.",
+    title: "Chat history persistence",
+    description: "Store messages in the database.",
     project_id: "proj_009",
     deadline: "2025-11-01T23:59:59Z",
     start_date: "2025-09-22T09:00:00Z",
@@ -267,8 +267,8 @@ export const mockTasks: Task[] = [
   },
   {
     task_id: "task_012b",
-    title: "Уведомления о новых сообщениях",
-    description: "Пуши + email-уведомления при новых сообщениях.",
+    title: "New message notifications",
+    description: "Push + email notifications for new messages.",
     project_id: "proj_009",
     deadline: "2025-11-15T23:59:59Z",
     start_date: "2025-09-25T09:00:00Z",

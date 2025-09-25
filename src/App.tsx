@@ -3,7 +3,7 @@ import AuthPage from "@/pages/AuthPage";
 import ProjectsPage from "@/pages/ProjectsPage";
 import ProjectDetailsPage from "@/pages/ProjectsPage/ProjectDetailsPage";
 import ProjectTasksPage from "@/pages/ProjectsPage/ProjectTasksPage";
-// import HomePage from "@/pages/HomePage";
+import HomePage from "@/pages/HomePage";
 
 function ProjectsLayout() {
   return <Outlet />; // место для вложенных страниц
@@ -15,11 +15,10 @@ export default function App() {
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/projects/:projectId" element={<ProjectsLayout />}>
-        <Route index element={<ProjectDetailsPage />} /> {/* /projects/:id */}
+        <Route index element={<ProjectDetailsPage />} />
         <Route path="tasks" element={<ProjectTasksPage />} />{" "}
-        {/* /projects/:id/tasks */}
       </Route>
-      <Route path="/" element={<ProjectsPage />} />
+      <Route path="/" element={<HomePage />} />
     </Routes>
   );
 }

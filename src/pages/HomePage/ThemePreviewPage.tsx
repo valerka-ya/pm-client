@@ -8,14 +8,14 @@ export default function ThemePreviewPage() {
         {/* Color Palette Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            🎨 Цветовая палитра
+            🎨 Color palette
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Primary Colors */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                Primary (Синий)
+                Primary (Blue)
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
@@ -42,7 +42,7 @@ export default function ThemePreviewPage() {
             {/* Secondary Colors */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                Secondary (Розовый)
+                Secondary (Pink)
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
@@ -69,7 +69,7 @@ export default function ThemePreviewPage() {
             {/* Success Colors */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                Success (Зеленый)
+                Success (Green)
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
@@ -92,13 +92,40 @@ export default function ThemePreviewPage() {
                 </div>
               </div>
             </div>
+
+            {/* Info / Warning / Danger */}
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                Info / Warning / Danger
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <div className="w-12 h-12 bg-info rounded-lg"></div>
+                  <span className="text-sm text-gray-600 dark:text-gray-300">
+                    info
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-12 h-12 bg-warning rounded-lg"></div>
+                  <span className="text-sm text-gray-600 dark:text-gray-300">
+                    warning
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-12 h-12 bg-danger rounded-lg"></div>
+                  <span className="text-sm text-gray-600 dark:text-gray-300">
+                    danger
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Buttons Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            🔘 Кнопки
+            🔘 Buttons
           </h2>
 
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-6">
@@ -111,6 +138,15 @@ export default function ThemePreviewPage() {
               </button>
               <button className="bg-success hover:bg-success-dark text-white px-6 py-3 rounded-lg font-medium transition-colors">
                 Success Button
+              </button>
+              <button className="bg-info hover:bg-info/90 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                Info Button
+              </button>
+              <button className="bg-warning hover:bg-yellow-500 text-black px-6 py-3 rounded-lg font-medium transition-colors">
+                Warning Button
+              </button>
+              <button className="bg-danger hover:bg-danger/90 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                Danger Button
               </button>
               <button className="bg-primary-light text-primary-dark px-6 py-3 rounded-lg font-medium hover:bg-primary-light/80 transition-colors">
                 Light Primary
@@ -128,7 +164,7 @@ export default function ThemePreviewPage() {
         {/* Cards Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            📋 Карточки
+            📋 Cards
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -136,23 +172,23 @@ export default function ThemePreviewPage() {
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-6 border border-gray-200 dark:border-gray-700">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Проект Alpha
+                  Project Alpha
                 </h3>
                 <span className="px-3 py-1 bg-success-light text-success-dark rounded-full text-sm font-medium">
-                  Активный
+                  Active
                 </span>
               </div>
 
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Описание проекта с использованием настроенной темы Tailwind CSS
+                Project description using Tailwind theme tokens
               </p>
 
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Дедлайн: 15.12.2024
+                  Deadline: 15.12.2024
                 </span>
                 <button className="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-                  Подробнее
+                  Details
                 </button>
               </div>
             </div>
@@ -161,23 +197,23 @@ export default function ThemePreviewPage() {
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-medium p-6 border border-gray-200 dark:border-gray-700">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Задача Beta
+                  Task Beta
                 </h3>
                 <span className="px-3 py-1 bg-secondary-light text-secondary-dark rounded-full text-sm font-medium">
-                  В процессе
+                  In progress
                 </span>
               </div>
 
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Важная задача требующая внимания и выполнения в срок
+                Important task requiring attention and on-time completion
               </p>
 
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Прогресс: 75%
+                  Progress: 75%
                 </span>
                 <button className="bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-                  Открыть
+                  Open
                 </button>
               </div>
             </div>
@@ -186,23 +222,23 @@ export default function ThemePreviewPage() {
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-strong p-6 border border-gray-200 dark:border-gray-700">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Привычка Gamma
+                  Habit Gamma
                 </h3>
                 <span className="px-3 py-1 bg-primary-light text-primary-dark rounded-full text-sm font-medium">
-                  Ежедневно
+                  Daily
                 </span>
               </div>
 
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Полезная привычка для улучшения продуктивности
+                Useful habit to improve productivity
               </p>
 
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Серия: 12 дней
+                  Streak: 12 days
                 </span>
                 <button className="bg-success hover:bg-success-dark text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-                  Выполнить
+                  Complete
                 </button>
               </div>
             </div>
@@ -212,32 +248,32 @@ export default function ThemePreviewPage() {
         {/* Form Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            📝 Формы
+            📝 Forms
           </h2>
 
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-8 max-w-md">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
-              Создать новый проект
+              Create new project
             </h3>
 
             <form className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Название проекта
+                  Project name
                 </label>
                 <input
                   type="text"
-                  placeholder="Введите название..."
+                  placeholder="Enter name..."
                   className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-white"
                 />
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Описание
+                  Description
                 </label>
                 <textarea
-                  placeholder="Описание проекта..."
+                  placeholder="Project description..."
                   rows={3}
                   className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-white"
                 />
@@ -245,10 +281,10 @@ export default function ThemePreviewPage() {
 
               <div className="flex space-x-4">
                 <button className="flex-1 bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded-lg transition-colors">
-                  Создать
+                  Create
                 </button>
                 <button className="flex-1 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium py-2 px-4 rounded-lg transition-colors">
-                  Отмена
+                  Cancel
                 </button>
               </div>
             </form>
@@ -258,25 +294,25 @@ export default function ThemePreviewPage() {
         {/* Status Indicators */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            🏷️ Статусы и индикаторы
+            🏷️ Statuses & indicators
           </h2>
 
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-6">
             <div className="flex flex-wrap gap-4">
               <span className="px-3 py-1 bg-success-light text-success-dark rounded-full text-sm font-medium">
-                ✅ Завершено
+                ✅ Completed
               </span>
               <span className="px-3 py-1 bg-primary-light text-primary-dark rounded-full text-sm font-medium">
-                🔄 В процессе
+                🔄 In progress
               </span>
               <span className="px-3 py-1 bg-secondary-light text-secondary-dark rounded-full text-sm font-medium">
-                ⏳ Ожидает
+                ⏳ Pending
               </span>
-              <span className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">
-                ❌ Отменено
+              <span className="px-3 py-1 bg-danger text-white rounded-full text-sm font-medium">
+                ❌ Canceled
               </span>
-              <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">
-                ⚠️ Просрочено
+              <span className="px-3 py-1 bg-warning text-black rounded-full text-sm font-medium">
+                ⚠️ Overdue
               </span>
             </div>
           </div>
@@ -285,13 +321,13 @@ export default function ThemePreviewPage() {
         {/* Shadows Demo */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            🌟 Тени
+            🌟 Shadows
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Мягкая тень
+                Soft shadow
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 shadow-soft
@@ -300,7 +336,7 @@ export default function ThemePreviewPage() {
 
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-medium p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Средняя тень
+                Medium shadow
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 shadow-medium
@@ -309,7 +345,7 @@ export default function ThemePreviewPage() {
 
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-strong p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Сильная тень
+                Strong shadow
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 shadow-strong

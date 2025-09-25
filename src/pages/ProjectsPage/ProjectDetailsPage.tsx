@@ -8,7 +8,7 @@ function formatDate(value?: string) {
   try {
     const d = new Date(value);
     if (Number.isNaN(d.getTime())) return value;
-    return d.toLocaleString("ru-RU", {
+    return d.toLocaleString("en-US", {
       dateStyle: "medium",
       timeStyle: "short",
     });
@@ -34,19 +34,19 @@ export default function ProjectDetailPage() {
       {projectData ? (
         <div className="space-y-8 flex">
           <section className="basis-3/4 space-y-4">
-            <h2 className="text-lg font-semibold">Задачи проекта</h2>
+            <h2 className="text-lg font-semibold">Project tasks</h2>
             <div className="overflow-x-auto rounded-lg border bg-white dark:border-gray-700 dark:bg-gray-900">
               <table className="min-w-full text-left text-sm">
                 <thead className="bg-gray-50 text-gray-600 dark:bg-gray-800 dark:text-gray-300">
                   <tr>
-                    <th className="px-4 py-3 font-medium">Задача</th>
-                    <th className="px-4 py-3 font-medium">Описание</th>
-                    <th className="px-4 py-3 font-medium">Дедлайн</th>
-                    <th className="px-4 py-3 font-medium">Старт</th>
-                    <th className="px-4 py-3 font-medium">Завершение</th>
-                    <th className="px-4 py-3 font-medium">Статус</th>
-                    <th className="px-4 py-3 font-medium">Теги</th>
-                    <th className="px-4 py-3 font-medium">Обновлено</th>
+                    <th className="px-4 py-3 font-medium">Task</th>
+                    <th className="px-4 py-3 font-medium">Description</th>
+                    <th className="px-4 py-3 font-medium">Deadline</th>
+                    <th className="px-4 py-3 font-medium">Start</th>
+                    <th className="px-4 py-3 font-medium">End</th>
+                    <th className="px-4 py-3 font-medium">Status</th>
+                    <th className="px-4 py-3 font-medium">Tags</th>
+                    <th className="px-4 py-3 font-medium">Updated</th>
                   </tr>
                 </thead>
                 <tbody className="text-gray-900 dark:text-gray-100">
@@ -56,7 +56,7 @@ export default function ProjectDetailPage() {
                         className="px-4 py-4 text-gray-500 dark:text-gray-400"
                         colSpan={8}
                       >
-                        Нет задач для этого проекта
+                        No tasks for this project
                       </td>
                     </tr>
                   ) : (
@@ -86,7 +86,7 @@ export default function ProjectDetailPage() {
                                 : "inline-flex items-center rounded-full bg-yellow-50 px-2 py-0.5 text-xs font-medium text-yellow-700 ring-1 ring-yellow-200 dark:bg-yellow-900 dark:text-yellow-300 dark:ring-yellow-700"
                             }
                           >
-                            {task.is_completed ? "Готово" : "В работе"}
+                            {task.is_completed ? "Done" : "In progress"}
                           </span>
                         </td>
                         <td className="px-4 py-3">
@@ -114,56 +114,56 @@ export default function ProjectDetailPage() {
           <section className="basis-1/4 px-6 mt-11">
             <div className="rounded-lg border bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800">
               <div className="text-sm text-gray-500 dark:text-gray-400">
-                ID проекта
+                Project ID
               </div>
               <div className="mt-1 text-base font-medium dark:text-gray-100">
                 {projectData.project_id}
               </div>
               <div className="my-1 border-t border-gray-500/50"></div>
               <div className="text-sm text-gray-500 dark:text-gray-400">
-                Статус
+                Status
               </div>
               <div className="mt-1 text-base font-medium dark:text-gray-100">
-                {projectData.is_completed ? "Завершён" : "В работе"}
+                {projectData.is_completed ? "Completed" : "In progress"}
               </div>
               <div className="my-1 border-t border-gray-500/50"></div>
               <div className="text-sm text-gray-500 dark:text-gray-400">
-                Дедлайн
+                Deadline
               </div>
               <div className="mt-1 text-base font-medium dark:text-gray-100">
                 {formatDate(projectData.deadline)}
               </div>
               <div className="my-1 border-t border-gray-500/50"></div>
               <div className="text-sm text-gray-500 dark:text-gray-400">
-                Старт
+                Start
               </div>
               <div className="mt-1 text-base font-medium dark:text-gray-100">
                 {formatDate(projectData.start_date)}
               </div>
               <div className="my-1 border-t border-gray-500/50"></div>
               <div className="text-sm text-gray-500 dark:text-gray-400">
-                Плановое завершение
+                Planned end
               </div>
               <div className="mt-1 text-base font-medium dark:text-gray-100">
                 {formatDate(projectData.end_date)}
               </div>
               <div className="my-1 border-t border-gray-500/50"></div>
               <div className="text-sm text-gray-500 dark:text-gray-400">
-                Дата завершения
+                Completed at
               </div>
               <div className="mt-1 text-base font-medium dark:text-gray-100">
                 {formatDate(projectData.completed_date)}
               </div>
               <div className="my-1 border-t border-gray-500/50"></div>
               <div className="text-sm text-gray-500 dark:text-gray-400">
-                Создан
+                Created
               </div>
               <div className="mt-1 text-base font-medium dark:text-gray-100">
                 {formatDate(projectData._created_at)}
               </div>
               <div className="my-1 border-t border-gray-500/50"></div>
               <div className="text-sm text-gray-500 dark:text-gray-400">
-                Обновлён
+                Updated
               </div>
               <div className="mt-1 text-base font-medium dark:text-gray-100">
                 {formatDate(projectData._updated_at)}
